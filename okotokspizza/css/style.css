@@ -1,0 +1,39 @@
+/*color for all of the links in site*/
+a:link {
+  color: white; }
+
+/*visitedlink*/
+a:visited {
+  color: white; }
+
+/*mousehover*/
+a:hover {
+  color: blue; }
+
+/*end of links*/
+/*index full page*/
+nav .index {
+  width: 30%; }
+
+nav ul li {
+  list-style-type: none; }
+
+li .menu {
+  text-decoration: none;
+  margin-left: 5em;
+  font-size: 35px; }
+
+li .blog {
+  text-decoration: none;
+  margin-left: 6em;
+  font-size: 35px; }
+
+li .reviews {
+  text-decoration: none;
+  margin-left: 7em;
+  font-size: 35px; }
+
+li .loc {
+  text-decoration: none;
+  margin-left: 8em;
+  font-size: 35px; }
