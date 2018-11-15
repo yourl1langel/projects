@@ -78,6 +78,32 @@ body{
 
 
 
+/*-----menu-----*/
+.table{
+    color: white;
+    .size{
+        color: $r;
+        width: 30%;
+margin-left: 30%;
+      h2{
+          font-size: 35px;
+        text-align: center;
+        }
+    }
+    .pizza{
+        background-color: pink;
+        width: 75%;
+        margin-left: 15%;
+        h3{
+            text-align: center;
+            color: $r;
+            font-size: 35px;
+        }
+    }
+}
+
+
+
 /*-----locations page-----*/
 .mapouter{
     width: 500px;

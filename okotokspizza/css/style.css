@@ -53,6 +53,25 @@ body {
     color: white; }
 
 /*-----endindex body-----*/
+/*-----menu-----*/
+.table {
+  color: white; }
+  .table .size {
+    color: red;
+    width: 30%;
+    margin-left: 30%; }
+    .table .size h2 {
+      font-size: 35px;
+      text-align: center; }
+  .table .pizza {
+    background-color: pink;
+    width: 75%;
+    margin-left: 15%; }
+    .table .pizza h3 {
+      text-align: center;
+      color: red;
+      font-size: 35px; }
+
 /*-----locations page-----*/
 .mapouter {
   width: 500px;
