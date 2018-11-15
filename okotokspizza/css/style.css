@@ -14,13 +14,12 @@ a:hover {
 /*-----allNav-----*/
 .navbar {
   background-color: #8c001a;
-  height: 8%;
-  width: 100%;
-  margin-top: 20%; }
+  display: block;
+  margin-top: 20%;
+  text-align: center; }
   .navbar li {
-    text-align: center;
     display: inline-block;
-    padding: 2%;
+    margin-right: 5%;
     font-size: 2em; }
 
 /*-----end all navs-----*/
@@ -28,7 +27,7 @@ a:hover {
 footer {
   margin: 2%; }
   footer .copy {
-    color: r;
+    color: red;
     font-size: 10px;
     text-align: center; }
 
@@ -46,19 +45,25 @@ body {
   margin-left: 25%; }
   .about h1 {
     color: red;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 2%; }
+  .about .tab {
+    text-indent: 5%; }
   .about section {
     color: white; }
 
 /*-----endindex body-----*/
 /*-----locations page-----*/
 .mapouter {
-  background-color: orange;
-  width: 400px;
-  height: 300px;
-  margin-left: 35%; }
+  width: 500px;
+  height: 500px;
+  margin-left: 25%;
+  margin-top: 3%;
+  text-align: center; }
 
-iframe {
-  max-width: 600px; }
+#gmap_canvas {
+  width: 500px;
+  height: 500px;
+  overflow: hidden; }
 
 /*-----delivery page----*/

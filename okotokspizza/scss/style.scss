@@ -11,7 +11,7 @@ a:visited{
 }
 /*mousehover*/
 a:hover{
-    color: red;
+    color: $r;
 }
 /*-----end of links-----*/
 
@@ -21,17 +21,14 @@ a:hover{
 
 .navbar{
     background-color: #8c001a;
-    height: 8%;
-    width: 100%;
+    display: block;
     margin-top: 20%;
+    text-align: center;
 
     li{
-        text-align: center;
         display: inline-block;
-        padding: 2%;
+        margin-right: 5%;
         font-size: 2em;
-
-
     }
 }
 /*-----end all navs-----*/
@@ -42,7 +39,7 @@ a:hover{
 footer{
     margin: 2%;
     .copy{
-        color: r;
+        color: $r;
         font-size: 10px;
         text-align: center;
     }
@@ -65,26 +62,33 @@ body{
     max-width:45%;
     margin-left:25%;
     h1{
-        color: red;
+        color: $r;
         text-align: center;
+        padding-bottom: 2%;
+    }
+    .tab{
+        text-indent: 5%;
     }
     section{
         color: white;
     }
 }
+
 /*-----endindex body-----*/
 
 
 
 /*-----locations page-----*/
 .mapouter{
-    background-color: orange;
-    width: 400px;
-    height: 300px;
-    margin-left: 35%;
+    width: 500px;
+    height: 500px;
+    margin-left: 25%;
+    margin-top: 3%;
+    text-align: center;
 }
-iframe{
-    max-width: 600px;
-
+#gmap_canvas{
+    width: 500px;
+    height: 500px;
+    overflow:hidden;
 }
 /*-----delivery page----*/
