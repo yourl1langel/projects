@@ -1,4 +1,4 @@
-/*color for all of the links in site*/
+/*-----color for all links in site-----*/
 a:link {
   color: white; }
 
@@ -8,32 +8,52 @@ a:visited {
 
 /*mousehover*/
 a:hover {
-  color: blue; }
+  color: red; }
 
-/*end of links*/
-/*index full page*/
-nav .index {
-  width: 30%; }
+/*-----end of links-----*/
+/*-----allNav-----*/
+.navbar {
+  background-color: #8c001a;
+  margin-top: 20%;
+  text-align: center; }
+  .navbar li {
+    margin-right: 10%;
+    padding: 1%;
+    display: inline-block; }
 
-nav ul li {
-  list-style-type: none; }
+/*-----end all navs-----*/
+/*-----footer all pages-----*/
+footer {
+  margin: 2%; }
+  footer .copy {
+    color: r;
+    font-size: 10px;
+    text-align: center; }
 
-li .menu {
-  text-decoration: none;
-  margin-left: 5em;
-  font-size: 35px; }
+/*-----end footer all pages-----*/
+/*-----index page-----*/
+body {
+  background-image: url("../images/photos/logo.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  margin: 0 auto;
+  background-color: black; }
 
-li .blog {
-  text-decoration: none;
-  margin-left: 6em;
-  font-size: 35px; }
+.about {
+  max-width: 45%;
+  margin-left: 25%; }
+  .about h1 {
+    color: red;
+    text-align: center; }
+  .about section {
+    color: white; }
 
-li .reviews {
-  text-decoration: none;
-  margin-left: 7em;
-  font-size: 35px; }
+/*-----endindex body-----*/
+/*-----locations page-----*/
+.mapouter {
+  background-color: orange;
+  width: 400px;
+  height: 300px; }
 
-li .loc {
-  text-decoration: none;
-  margin-left: 8em;
-  font-size: 35px; }
+iframe {
+  max-width: 600px; }
