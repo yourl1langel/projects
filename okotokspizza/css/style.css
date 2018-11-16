@@ -33,6 +33,19 @@ footer {
 
 /*-----end footer all pages-----*/
 /*-----index page-----*/
+.images {
+  width: 35px;
+  margin: 2%;
+  display: inline; }
+
+.navbaar {
+  background-color: #8c001a;
+  float: right;
+  height: 700px; }
+  .navbaar li {
+    font-size: 2em;
+    list-style: none; }
+
 body {
   background-image: url("../images/photos/logo.png");
   background-repeat: no-repeat;

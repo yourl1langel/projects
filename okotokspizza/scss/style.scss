@@ -49,6 +49,24 @@ footer{
 
 
 /*-----index page-----*/
+.images{
+    width: 35px;
+    margin: 2%;
+    display: inline;
+    .1a{
+
+    }
+}
+
+.navbaar{
+    background-color: #8c001a;
+    float: right;
+    height: 700px;
+    li{
+        font-size: 2em;
+        list-style: none;
+    }
+}
 
 body{
     background-image: url("../images/photos/logo.png");
