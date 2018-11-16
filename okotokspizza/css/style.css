@@ -53,7 +53,7 @@ body {
     color: white; }
 
 /*-----endindex body-----*/
-/*-----menu-----*/
+/*-----menu page-----*/
 .table {
   color: white; }
   .table .size {
@@ -64,14 +64,31 @@ body {
       font-size: 35px;
       text-align: center; }
   .table .pizza {
-    background-color: pink;
+    margin-top: 3%;
     width: 75%;
-    margin-left: 15%; }
+    margin-left: 12%; }
     .table .pizza h3 {
-      text-align: center;
+      margin-left: 32%;
       color: red;
       font-size: 35px; }
+  .table .toppings {
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 3%; }
+    .table .toppings h4 {
+      text-align: center;
+      color: red; }
+  .table .small {
+    background-color: pink; }
+  .table .extras {
+    width: 25%;
+    margin-left: 35%;
+    margin-top: 3%; }
+    .table .extras h5 {
+      text-align: center;
+      color: red; }
 
+/*-----end menu page*/
 /*-----locations page-----*/
 .mapouter {
   width: 500px;

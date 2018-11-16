@@ -78,30 +78,51 @@ body{
 
 
 
-/*-----menu-----*/
+/*-----menu page-----*/
 .table{
     color: white;
     .size{
         color: $r;
         width: 30%;
-margin-left: 30%;
-      h2{
-          font-size: 35px;
-        text-align: center;
+        margin-left: 30%;
+        h2{
+            font-size: 35px;
+            text-align: center;
         }
     }
     .pizza{
-        background-color: pink;
+        margin-top: 3%;
         width: 75%;
-        margin-left: 15%;
+        margin-left: 12%;
         h3{
-            text-align: center;
+            margin-left: 32%;
             color: $r;
             font-size: 35px;
         }
     }
+    .toppings{
+        width: 55%;
+        margin-left: 23%;
+        margin-top: 3%;
+        h4{
+            text-align: center;
+            color: $r;
+        }
+    }
+    .small{
+        background-color: pink;
+    }
+    .extras{
+        width: 25%;
+        margin-left: 35%;
+        margin-top: 3%;
+        h5{
+            text-align: center;
+            color: $r;
+        }
+    }
 }
-
+/*-----end menu page*/
 
 
 /*-----locations page-----*/
