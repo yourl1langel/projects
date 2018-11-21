@@ -8,22 +8,10 @@ a:visited {
 
 /*mousehover*/
 a:hover {
-  cursor: wait;
-  background-color: #FFA07A; }
+  cursor: crosshair;
+  color: red; }
 
 /*-----end of links-----*/
-/*-----allNav-----*/
-.navbar {
-  background-color: black;
-  display: block;
-  margin-top: 20%;
-  text-align: center; }
-  .navbar li {
-    display: inline-block;
-    margin-right: 5%;
-    font-size: 2em; }
-
-/*-----end all navs-----*/
 /*-----index page-----*/
 #img-container {
   overflow: hidden; }
@@ -71,41 +59,46 @@ a:hover {
     text-align: center;
     padding-left: 8%; }
 
+.about {
+  background-color: maroon;
+  width: 45%;
+  margin-left: 27%;
+  padding: 2%; }
+  .about h1 {
+    text-align: center;
+    color: white; }
+  .about .tab {
+    margin-left: 14px; }
+
+footer {
+  background-color: red; }
+
 /*-----endindex body-----*/
+/*-----allNav-----*/
+.navbar {
+  background-color: black;
+  display: block;
+  margin-top: 20%;
+  text-align: center; }
+  .navbar li {
+    display: inline-block;
+    margin-right: 5%;
+    font-size: 2em; }
+
+/*-----end all navs-----*/
 /*-----menu page-----*/
-.table {
-  color: white; }
-  .table .size {
-    color: red;
-    width: 30%;
-    margin-left: 30%; }
-    .table .size caption {
-      font-size: 35px;
-      text-align: center; }
-  .table .pizza {
-    margin-top: 3%;
-    width: 75%;
-    margin-left: 12%; }
-    .table .pizza caption {
-      margin-left: 32%;
-      color: red;
-      font-size: 35px; }
-  .table .toppings {
-    width: 55%;
-    margin-left: 23%;
-    margin-top: 3%; }
-    .table .toppings caption {
-      text-align: center;
-      color: red; }
-  .table .small {
-    background-color: pink; }
-  .table .extras {
-    width: 25%;
-    margin-left: 35%;
-    margin-top: 3%; }
-    .table .extras caption {
-      text-align: center;
-      color: red; }
+.table span {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: left; }
+
+.table .bold {
+  font-size: 1em; }
+
+.table .top {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1em; }
 
 /*-----end menu page*/
 /*-----locations page-----*/

@@ -17,29 +17,12 @@ a:visited{
 }
 /*mousehover*/
 a:hover{
-
-    cursor: wait;
-    background-color: #FFA07A;
+    cursor: crosshair;
+    color: $r;
 }
 
 /*-----end of links-----*/
 
-
-
-/*-----allNav-----*/
-.navbar{
-    background-color: black;
-    display: block;
-    margin-top: 20%;
-    text-align: center;
-
-    li{
-        display: inline-block;
-        margin-right: 5%;
-        font-size: 2em;
-    }
-}
-/*-----end all navs-----*/
 /*-----index page-----*/
 
 #img-container {
@@ -108,54 +91,63 @@ a:hover{
         padding-left: 8%;
     }
 }
+
+.about{
+    background-color: $m;
+    width: 45%;
+    margin-left: 27%;
+    padding: 2%;
+    h1{
+        text-align: center;
+        color: $w;
+
+    }
+    .tab{
+        margin-left: 14px;
+    }
+}
+footer{
+    background-color: $r;
+}
 /*-----endindex body-----*/
+
+/*-----allNav-----*/
+.navbar{
+    background-color: black;
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+
+    li{
+        display: inline-block;
+        margin-right: 5%;
+        font-size: 2em;
+    }
+}
+/*-----end all navs-----*/
 
 
 
 /*-----menu page-----*/
+
 .table{
-    color: $w;
-    .size{
-        color: $r;
-        width: 30%;
-        margin-left: 30%;
-        caption{
-            font-size: 35px;
-            text-align: center;
-        }
+    span{
+        font-size: 2em;
+        font-weight: bold;
+        text-align: left;
     }
-    .pizza{
-        margin-top: 3%;
-        width: 75%;
-        margin-left: 12%;
-        caption{
-            margin-left: 32%;
-            color: $r;
-            font-size: 35px;
-        }
+    .bold{
+        font-size: 1em;
     }
-    .toppings{
-        width: 55%;
-        margin-left: 23%;
-        margin-top: 3%;
-        caption{
-            text-align: center;
-            color: $r;
-        }
+    .top{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 1em;
     }
-    .small{
-        background-color: pink;
-    }
-    .extras{
-        width: 25%;
-        margin-left: 35%;
-        margin-top: 3%;
-        caption{
-            text-align: center;
-            color: $r;
-        }
-    }
+
 }
+
+
 /*-----end menu page*/
 
 
