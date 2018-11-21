@@ -8,12 +8,13 @@ a:visited {
 
 /*mousehover*/
 a:hover {
-  color: red; }
+  cursor: wait;
+  background-color: #FFA07A; }
 
 /*-----end of links-----*/
 /*-----allNav-----*/
 .navbar {
-  background-color: #8c001a;
+  background-color: black;
   display: block;
   margin-top: 20%;
   text-align: center; }
@@ -23,46 +24,52 @@ a:hover {
     font-size: 2em; }
 
 /*-----end all navs-----*/
-/*-----footer all pages-----*/
-footer {
-  margin: 2%; }
-  footer .copy {
-    color: red;
-    font-size: 10px;
-    text-align: center; }
-
-/*-----end footer all pages-----*/
 /*-----index page-----*/
-.images {
-  width: 35px;
-  margin: 2%;
-  display: inline; }
+#img-container {
+  overflow: hidden; }
+  #img-container figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite; }
+    #img-container figure img {
+      width: 20%;
+      float: left;
+      height: 400px; }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  30% {
+    left: -100%; }
+  35% {
+    left: -200%; }
+  45% {
+    left: -200%; }
+  50% {
+    left: -300%; }
+  70% {
+    left: -300%; }
+  75% {
+    left: -400%; }
+  85% {
+    left: -400%; }
+  100% {
+    left: -400%; } }
 
 .navbaar {
-  background-color: #8c001a;
-  float: right;
-  height: 700px; }
-  .navbaar li {
-    font-size: 2em;
-    list-style: none; }
-
-body {
-  background-image: url("../images/photos/logo.png");
-  background-repeat: no-repeat;
-  background-size: 25%;
-  margin: 0 auto;
   background-color: black; }
-
-.about {
-  max-width: 45%;
-  margin-left: 25%; }
-  .about h1 {
-    color: red;
+  .navbaar ul {
+    margin-left: 18%; }
+  .navbaar li {
+    display: inline-block;
     text-align: center;
-    padding-bottom: 2%; }
-  .about .tab {
-    text-indent: 5%;
-    color: white; }
+    padding-left: 8%; }
 
 /*-----endindex body-----*/
 /*-----menu page-----*/
@@ -72,14 +79,14 @@ body {
     color: red;
     width: 30%;
     margin-left: 30%; }
-    .table .size h2 {
+    .table .size caption {
       font-size: 35px;
       text-align: center; }
   .table .pizza {
     margin-top: 3%;
     width: 75%;
     margin-left: 12%; }
-    .table .pizza h3 {
+    .table .pizza caption {
       margin-left: 32%;
       color: red;
       font-size: 35px; }
@@ -87,7 +94,7 @@ body {
     width: 55%;
     margin-left: 23%;
     margin-top: 3%; }
-    .table .toppings h4 {
+    .table .toppings caption {
       text-align: center;
       color: red; }
   .table .small {
@@ -96,7 +103,7 @@ body {
     width: 25%;
     margin-left: 35%;
     margin-top: 3%; }
-    .table .extras h5 {
+    .table .extras caption {
       text-align: center;
       color: red; }
 
@@ -121,5 +128,14 @@ body {
 
 /*-----endlocationpage-----*/
 /*-----delivery page----*/
+/*-----footer all pages-----*/
+footer {
+  margin: 2%; }
+  footer .copy {
+    color: red;
+    font-size: 10px;
+    text-align: center; }
+
+/*-----end footer all pages-----*/
 @media only screen and (max-width: 600px) {
   /*mobile*/ }

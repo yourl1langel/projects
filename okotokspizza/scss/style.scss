@@ -1,25 +1,34 @@
 $r: red;
+$w: white;
+$c: crimson;
+$d: darkred;
+$m: maroon;
+$b: black;
 
 
 /*-----color for all links in site-----*/
+
 a:link{
-    color: white;
+    color: $w;
 }
 /*visitedlink*/
 a:visited{
-    color: white;
+    color: $w;
 }
 /*mousehover*/
 a:hover{
-    color: $r;
+
+    cursor: wait;
+    background-color: #FFA07A;
 }
+
 /*-----end of links-----*/
 
 
 
 /*-----allNav-----*/
 .navbar{
-    background-color: #8c001a;
+    background-color: black;
     display: block;
     margin-top: 20%;
     text-align: center;
@@ -31,76 +40,86 @@ a:hover{
     }
 }
 /*-----end all navs-----*/
-
-
-
-/*-----footer all pages-----*/
-footer{
-    margin: 2%;
-    .copy{
-        color: $r;
-        font-size: 10px;
-        text-align: center;
-    }
-}
-/*-----end footer all pages-----*/
-
-
-
 /*-----index page-----*/
-.images{
-    width: 35px;
-    margin: 2%;
-    display: inline;
-    .1a{
 
+#img-container {
+    overflow: hidden;
+
+    figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 10s slider infinite;
+
+        img {
+            width: 20%;
+            float: left;
+            height: 400px;
+        }
     }
+
+}
+
+@keyframes slider {
+  0% {
+      left: 0;
+  }
+  20% {
+      left: 0;
+  }
+  25% {
+      left: -100%;
+  }
+  30%{
+      left: -100%;
+  }
+  35%{
+      left: -200%;
+  }
+  45%{
+      left: -200%;
+  }
+  50%{
+      left: -300%;
+  }
+  70%{
+      left: -300%;
+  }
+  75%{
+      left: -400%;
+  }
+  85%{
+      left: -400%;
+  }
+  100%{
+      left: -400%;
+  }
 }
 
 .navbaar{
-    background-color: #8c001a;
-    float: right;
-    height: 700px;
+    background-color: $b;
+    ul{
+        margin-left: 18%;
+    }
     li{
-        font-size: 2em;
-        list-style: none;
-    }
-}
-
-body{
-    background-image: url("../images/photos/logo.png");
-    background-repeat: no-repeat;
-    background-size: 25%;
-    margin: 0 auto;
-    background-color: black;
-
-}
-.about{
-    max-width:45%;
-    margin-left:25%;
-    h1{
-        color: $r;
+        display: inline-block;
         text-align: center;
-        padding-bottom: 2%;
-    }
-    .tab{
-        text-indent: 5%;
-        color: white;
+        padding-left: 8%;
     }
 }
-
 /*-----endindex body-----*/
 
 
 
 /*-----menu page-----*/
 .table{
-    color: white;
+    color: $w;
     .size{
         color: $r;
         width: 30%;
         margin-left: 30%;
-        h2{
+        caption{
             font-size: 35px;
             text-align: center;
         }
@@ -109,7 +128,7 @@ body{
         margin-top: 3%;
         width: 75%;
         margin-left: 12%;
-        h3{
+        caption{
             margin-left: 32%;
             color: $r;
             font-size: 35px;
@@ -119,7 +138,7 @@ body{
         width: 55%;
         margin-left: 23%;
         margin-top: 3%;
-        h4{
+        caption{
             text-align: center;
             color: $r;
         }
@@ -131,7 +150,7 @@ body{
         width: 25%;
         margin-left: 35%;
         margin-top: 3%;
-        h5{
+        caption{
             text-align: center;
             color: $r;
         }
@@ -163,6 +182,17 @@ body{
 }
 /*-----endlocationpage-----*/
 /*-----delivery page----*/
+
+/*-----footer all pages-----*/
+footer{
+    margin: 2%;
+    .copy{
+        color: $r;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+/*-----end footer all pages-----*/
 
 
 @media only screen and (max-width: 600px){
