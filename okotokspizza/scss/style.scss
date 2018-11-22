@@ -1,5 +1,5 @@
 $r: red;
-$w: white;
+$w: #FFFFFF;
 $c: crimson;
 $d: darkred;
 $m: maroon;
@@ -22,7 +22,7 @@ a:hover{
 }
 
 /*-----end of links-----*/
-
+/*---------------------*/
 /*-----index page-----*/
 
 #img-container {
@@ -80,7 +80,7 @@ a:hover{
   }
 }
 
-.navbaar{
+.naavbar{
     background-color: $b;
     ul{
         margin-left: 18%;
@@ -110,47 +110,77 @@ footer{
     background-color: $r;
 }
 /*-----endindex body-----*/
-
+/*---------------------*/
 /*-----allNav-----*/
 .navbar{
     background-color: black;
     display: block;
-    margin-top: 20%;
     text-align: center;
-
     li{
         display: inline-block;
         margin-right: 5%;
-        font-size: 2em;
     }
 }
 /*-----end all navs-----*/
-
-
-
+/*---------------------*/
 /*-----menu page-----*/
-
+.top-vid{
+background-color: $b;
+   width: 100%;
+   height: 220px;
+   img{
+       height:65px;
+       z-index: 10;
+       float: left;
+   }
+    video{
+        height: 220px;
+        margin-left: 25%;
+   }
+}
 .table{
+    font-size: 12px;
+    background-image: radial-gradient(circle, $w, #FFFFE0, #CCCC00, #FFD700);
+    table{
+        margin-left: 20%;
+    }
+    h1{
+        font-size: 55px;
+        text-align: center;
+        margin-bottom: 5%;
+        color: $r;
+    }
     span{
-        font-size: 2em;
+        font-size: 30px;
         font-weight: bold;
         text-align: left;
     }
     .bold{
-        font-size: 1em;
+        font-size: 13px;
+        font-weight: bold;
     }
     .top{
         text-align: center;
         text-decoration: underline;
         font-size: 1em;
     }
-
+    .td{
+        font-size: 20px;
+    }
 }
-
-
 /*-----end menu page*/
-
-
+/*-------------------*/
+/*-----reviewspage-----*/
+.img-logo{
+    float: left;
+    height: 52px;
+}
+.horace{
+    background-color: blue;
+    width: 25%;
+}
+/*-----endreviewspage-----*/
+/*----------------------*/
 /*-----locations page-----*/
 .mapouter{
     width: 500px;
@@ -185,8 +215,4 @@ footer{
     }
 }
 /*-----end footer all pages-----*/
-
-
-@media only screen and (max-width: 600px){
-/*mobile*/
-}
+/*-----*/

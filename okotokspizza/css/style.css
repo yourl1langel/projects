@@ -1,10 +1,10 @@
 /*-----color for all links in site-----*/
 a:link {
-  color: white; }
+  color: #FFFFFF; }
 
 /*visitedlink*/
 a:visited {
-  color: white; }
+  color: #FFFFFF; }
 
 /*mousehover*/
 a:hover {
@@ -12,6 +12,7 @@ a:hover {
   color: red; }
 
 /*-----end of links-----*/
+/*---------------------*/
 /*-----index page-----*/
 #img-container {
   overflow: hidden; }
@@ -50,11 +51,11 @@ a:hover {
   100% {
     left: -400%; } }
 
-.navbaar {
+.naavbar {
   background-color: black; }
-  .navbaar ul {
+  .naavbar ul {
     margin-left: 18%; }
-  .navbaar li {
+  .naavbar li {
     display: inline-block;
     text-align: center;
     padding-left: 8%; }
@@ -66,7 +67,7 @@ a:hover {
   padding: 2%; }
   .about h1 {
     text-align: center;
-    color: white; }
+    color: #FFFFFF; }
   .about .tab {
     margin-left: 14px; }
 
@@ -74,33 +75,68 @@ footer {
   background-color: red; }
 
 /*-----endindex body-----*/
+/*---------------------*/
 /*-----allNav-----*/
 .navbar {
   background-color: black;
   display: block;
-  margin-top: 20%;
   text-align: center; }
   .navbar li {
     display: inline-block;
-    margin-right: 5%;
-    font-size: 2em; }
+    margin-right: 5%; }
 
 /*-----end all navs-----*/
+/*---------------------*/
 /*-----menu page-----*/
-.table span {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: left; }
+.top-vid {
+  background-color: black;
+  width: 100%;
+  height: 220px; }
+  .top-vid img {
+    height: 65px;
+    z-index: 10;
+    float: left; }
+  .top-vid video {
+    height: 220px;
+    margin-left: 25%; }
 
-.table .bold {
-  font-size: 1em; }
-
-.table .top {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 1em; }
+.table {
+  font-size: 12px;
+  background-image: radial-gradient(circle, #FFFFFF, #FFFFE0, #CCCC00, #FFD700); }
+  .table table {
+    margin-left: 20%; }
+  .table h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 5%;
+    color: red; }
+  .table span {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left; }
+  .table .bold {
+    font-size: 13px;
+    font-weight: bold; }
+  .table .top {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1em; }
+  .table .td {
+    font-size: 20px; }
 
 /*-----end menu page*/
+/*-------------------*/
+/*-----reviewspage-----*/
+.img-logo {
+  float: left;
+  height: 52px; }
+
+.horace {
+  background-color: blue;
+  width: 25%; }
+
+/*-----endreviewspage-----*/
+/*----------------------*/
 /*-----locations page-----*/
 .mapouter {
   width: 500px;
@@ -130,5 +166,4 @@ footer {
     text-align: center; }
 
 /*-----end footer all pages-----*/
-@media only screen and (max-width: 600px) {
-  /*mobile*/ }
+/*-----*/
