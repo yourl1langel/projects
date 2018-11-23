@@ -1,19 +1,20 @@
-/*-----color for all links in site-----*/
+/*-----color-for-all-links-in-site-----*/
 a:link {
   color: #FFFFFF; }
 
-/*visitedlink*/
+/*visited-link*/
 a:visited {
   color: #FFFFFF; }
 
-/*mousehover*/
+/*mouse-hover*/
 a:hover {
   cursor: crosshair;
   color: red; }
 
-/*-----end of links-----*/
+/*-----end-of-links-----*/
 /*---------------------*/
-/*-----index page-----*/
+/*-----index-page-----*/
+/*slider-index*/
 #img-container {
   overflow: hidden; }
   #img-container figure {
@@ -51,8 +52,16 @@ a:hover {
   100% {
     left: -400%; } }
 
+/*end-slider-index*/
+/*menu-bar-index*/
 .naavbar {
-  background-color: black; }
+  background-color: black;
+  padding-bottom: 5px; }
+  .naavbar img {
+    width: 70px;
+    float: left; }
+  .naavbar #tel {
+    margin-left: 37%; }
   .naavbar ul {
     margin-left: 18%; }
   .naavbar li {
@@ -60,49 +69,71 @@ a:hover {
     text-align: center;
     padding-left: 8%; }
 
-.about {
-  background-color: maroon;
-  width: 45%;
-  margin-left: 27%;
-  padding: 2%; }
-  .about h1 {
-    text-align: center;
-    color: #FFFFFF; }
-  .about .tab {
-    margin-left: 14px; }
+/*end-menu-bar-index*/
+/*about-us-index*/
+.background {
+  background-image: url("../images/photos/pizza6.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 15%;
+  padding-top: 12%; }
+  .background .about {
+    width: 35%;
+    margin-left: 30%;
+    padding: 2%;
+    background-color: black;
+    opacity: 0.8; }
+    .background .about section {
+      color: #FFFFFF; }
+    .background .about h1 {
+      font-size: 45px;
+      color: maroon;
+      text-align: center; }
+    .background .about .tab {
+      text-indent: 10%; }
 
-footer {
-  background-color: red; }
-
-/*-----endindex body-----*/
+/*end-about-us-index*/
+/*-----end-index-body-----*/
 /*---------------------*/
-/*-----allNav-----*/
+/*-----all-Nav-----*/
 .navbar {
   background-color: black;
   display: block;
   text-align: center; }
+  .navbar img {
+    height: 70px; }
   .navbar li {
     display: inline-block;
     margin-right: 5%; }
 
-/*-----end all navs-----*/
+/*-----end-all-navs-----*/
 /*---------------------*/
-/*-----menu page-----*/
+/*-----menu-page-----*/
+/*top-page-menu*/
 .top-vid {
   background-color: black;
   width: 100%;
   height: 220px; }
-  .top-vid img {
-    height: 65px;
-    z-index: 10;
-    float: left; }
+  .top-vid aside {
+    color: red;
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 4%; }
+    .top-vid aside .tab {
+      text-indent: 5%; }
   .top-vid video {
     height: 220px;
-    margin-left: 25%; }
+    margin-left: 10%; }
 
+/*end-top-page-menu*/
+/*menu-menu*/
 .table {
   font-size: 12px;
-  background-image: radial-gradient(circle, #FFFFFF, #FFFFE0, #CCCC00, #FFD700); }
+  background-image: radial-gradient(circle, #FFFFFF, #FFFFE0, #CCCC00, #FFD700);
+  padding-bottom: 5%;
+  padding-top: 5%;
+  margin: 0; }
   .table table {
     margin-left: 20%; }
   .table h1 {
@@ -124,46 +155,92 @@ footer {
   .table .td {
     font-size: 20px; }
 
-/*-----end menu page*/
+/*-----end-menu-page*/
 /*-------------------*/
-/*-----reviewspage-----*/
-.img-logo {
-  float: left;
-  height: 52px; }
+/*-----reviews-page-----*/
+/*commentslide*/
+#comments-container {
+  overflow: hidden;
+  width: 25%;
+  height: 45%;
+  background-color: #FFFFFF;
+  margin-left: 35%; }
+  #comments-container .comments {
+    display: block;
+    width: 3159px;
+    position: relative;
+    margin: 0;
+    color: red;
+    animation: 55s slider infinite; }
+    #comments-container .comments section {
+      background-color: #FFFFFF;
+      float: left;
+      width: 10%;
+      height: 15%; }
+    #comments-container .comments .tab1 {
+      text-indent: 5%; }
 
-.horace {
-  background-color: blue;
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  30% {
+    left: -100%; }
+  35% {
+    left: -200%; }
+  45% {
+    left: -200%; }
+  50% {
+    left: -300%; }
+  70% {
+    left: -300%; }
+  75% {
+    left: -400%; }
+  85% {
+    left: -400%; }
+  100% {
+    left: -400%; } }
+
+/*form*/
+.form-review {
+  background-color: black;
   width: 25%; }
+  .form-review label {
+    display: inline-block;
+    width: 90px;
+    text-align: right; }
+  .form-review textarea {
+    vertical-align: text-top; }
+  .form-review .buttoon {
+    margin-left: 72%;
+    width: 57px;
+    background-color: pink; }
 
-/*-----endreviewspage-----*/
+/*-----end-reviews-page-----*/
 /*----------------------*/
-/*-----locations page-----*/
+/*-----locations-page-----*/
 .mapouter {
   width: 500px;
   height: 500px;
   margin-left: 25%;
   margin-top: 3%;
   text-align: center; }
+  .mapouter #gmap_canvas {
+    width: 500px;
+    height: 500px; }
 
-#gmap_canvas {
-  width: 500px;
-  height: 500px;
-  overflow: hidden; }
-
-.info {
-  background-color: pink;
-  width: 25%;
-  z-index: 5; }
-
-/*-----endlocationpage-----*/
-/*-----delivery page----*/
-/*-----footer all pages-----*/
+/*-----end-location-page-----*/
+/*-----delivery-page----*/
+/*-----footer-all-pages-----*/
 footer {
-  margin: 2%; }
+  background-color: black; }
   footer .copy {
     color: red;
     font-size: 10px;
     text-align: center; }
 
-/*-----end footer all pages-----*/
+/*-----end-footer-all-pages-----*/
 /*-----*/
