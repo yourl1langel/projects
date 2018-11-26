@@ -45,32 +45,37 @@ a:hover {
   .naavbar img {
     width: 70px;
     float: left; }
-  .naavbar #tel {
-    margin-left: 37%; }
+  .naavbar #telephone-desk {
+    text-align: center;
+    color: #FFFFFF;
+    display: block; }
+  .naavbar #tel-mobile {
+    display: none; }
   .naavbar ul {
     margin-left: 18%; }
   .naavbar li {
     display: inline-block;
     text-align: center;
     padding-left: 8%; }
+  .naavbar .mobile-img {
+    display: none; }
 
 /*about-us-index*/
 .background img {
-  width: 100%;
-  height: 30%; }
+  width: 100%; }
 
 .background .about {
-  width: 35%;
-  margin-left: 30%;
-  padding: 2%;
-  background-color: black;
-  opacity: 0.8;
   position: absolute;
-  top: 539px; }
+  top: 424px; }
   .background .about section {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    width: 40%;
+    margin-left: 30%;
+    background-color: black;
+    opacity: 0.8; }
   .background .about h1 {
     font-size: 45px;
+    background-color: black;
     color: maroon;
     text-align: center; }
   .background .about .tab {
@@ -142,15 +147,23 @@ a:hover {
 /*-----end-menu-page*/
 /*-------------------*/
 /*-----reviews-page-----*/
+.color {
+  background-color: #FFFFE0; }
+
 /*commentslide*/
 #comments-container {
   background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9); }
   #comments-container .comments-holder {
-    background-color: orange; }
+    margin-top: 17%; }
     #comments-container .comments-holder .comments {
-      background-color: pink; }
+      width: 30%;
+      display: inline;
+      margin: 2%; }
       #comments-container .comments-holder .comments .tab1 {
-        text-indent: 10%; }
+        background-color: #2C3539;
+        color: red;
+        text-indent: 10%;
+        text-align: left; }
 
 /*form*/
 .form-review {
@@ -245,19 +258,20 @@ a:hover {
 /*------deliverypage------*/
 #personal-container {
   background-color: pink;
-  background: url("../images/photos/giphy.gif");
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 15px;
   top: 150px;
-  width: 100%; }
+  width: 100%;
+  background-repeat: no-repeat;
+  background: url("../images/photos/giphy.gif"); }
   #personal-container label {
     display: inline-block;
     background-color: black;
     border-radius: 15%;
     color: #FFFFFF;
     width: 90px;
-    text-align: right; }
+    text-align: left; }
   #personal-container textarea {
     vertical-align: text-top; }
   #personal-container .button {
@@ -281,3 +295,59 @@ footer {
     text-align: center;
     color: red;
     font-size: 12px; }
+
+@media only screen and (max-width: 720px) {
+  /*index*/
+  .img-slider {
+    display: none; }
+  .naavbar {
+    width: 25%;
+    height: 20%;
+    position: absolute; }
+    .naavbar img {
+      display: none; }
+    .naavbar #telephone-desk {
+      display: none; }
+    .naavbar #tel-mobile {
+      display: block;
+      text-align: center;
+      color: #FFFFFF; }
+    .naavbar ul {
+      margin: 0;
+      width: 20%; }
+    .naavbar li {
+      display: list-item;
+      text-align: left;
+      padding-left: 0; }
+    .naavbar .mobile-img {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 150px; }
+      .naavbar .mobile-img img {
+        display: block;
+        width: 600px;
+        height: 150px; } }
+
+/*about-us-index*/
+.background img {
+  height: 750px; }
+
+.background .about {
+  position: absolute;
+  top: 147px;
+  /*index-nav*/ }
+  .background .about section {
+    width: 100%;
+    margin: 0; }
+  .background .about .navbar {
+    width: 25%;
+    height: 20%;
+    position: absolute; }
+    .background .about .navbar ul {
+      margin: 0;
+      width: 20%; }
+    .background .about .navbar li {
+      display: list-item;
+      text-align: left;
+      padding-left: 0; }

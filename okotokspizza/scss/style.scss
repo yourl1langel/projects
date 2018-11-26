@@ -63,8 +63,15 @@ a:hover{
         width: 70px;
         float: left;
     }
-    #tel{
-        margin-left: 37%;
+
+    #telephone-desk{
+        text-align: center;
+        color: $w;
+        display: block;
+
+    }
+    #tel-mobile{
+        display: none;
 }
     ul{
         margin-left: 18%;
@@ -74,6 +81,9 @@ a:hover{
         text-align: center;
         padding-left: 8%;
     }
+    .mobile-img{
+        display: none;
+    }
 }
 
 
@@ -82,21 +92,20 @@ a:hover{
 .background{
     img{
         width: 100%;
-        height: 30%;
     }
     .about{
-        width: 35%;
-        margin-left: 30%;
-        padding: 2%;
-        background-color: $b;
-        opacity: 0.8;
         position: absolute;
-        top: 539px;
+        top: 424px;
         section{
             color: $w;
+            width: 40%;
+            margin-left: 30%;
+            background-color: $b;
+            opacity: 0.8;
         }
        h1{
             font-size: 45px;
+            background-color: $b;
             color: $m;
             text-align: center;
         }
@@ -185,17 +194,23 @@ a:hover{
 /*-------------------*/
 /*-----reviews-page-----*/
 .color{
-
+    background-color: #FFFFE0;
 }
 /*commentslide*/
 #comments-container{
     background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9);
     .comments-holder{
-        background-color: orange;
+        margin-top: 17%;
         .comments{
-            background-color: pink;
+            width: 30%;
+            display: inline;
+            margin: 2%;
+
             .tab1{
+                background-color: #2C3539;
+                color: $r;
                 text-indent: 10%;
+                text-align: left;
             }
         }
     }
@@ -321,20 +336,20 @@ a:hover{
 /*------deliverypage------*/
 #personal-container{
     background-color: pink;
-    background: url("../images/photos/giphy.gif");
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 15px;
     top: 150px;
     width: 100%;
-
+    background-repeat: no-repeat;
+    background: url("../images/photos/giphy.gif");
     label{
         display: inline-block;
         background-color: $b;
         border-radius: 15%;
         color: $w;
         width: 90px;
-        text-align: right;
+        text-align: left;
     }
     textarea{
         vertical-align: text-top;
@@ -363,5 +378,79 @@ footer{
         text-align: center;
         color: $r;
         font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+/*index*/
+.img-slider{
+    display: none;
+}
+    .naavbar{
+        width: 25%;
+        height: 20%;
+        position:absolute;
+        img{
+            display: none;
+        }
+        #telephone-desk{
+            display: none;
+        }
+        #tel-mobile{
+            display: block;
+            text-align: center;
+            color: $w;
+        }
+        ul{
+            margin: 0;
+            width:20%;
+        }
+        li{
+            display: list-item;
+            text-align: left;
+            padding-left: 0;
+        }
+        .mobile-img{
+            display: block;
+            position: absolute;
+            top:0px;
+            left: 150px;
+            img{
+                display: block;
+                width: 600px;
+                height: 150px;
+            }
+        }
+    }
+}
+/*about-us-index*/
+.background{
+    img{
+        height: 750px;
+    }
+    .about{
+        position: absolute;
+        top: 147px;
+        section{
+            width: 100%;
+            margin: 0;
+        }
+        /*index-nav*/
+        .navbar{
+            width: 25%;
+            height: 20%;
+            position:absolute;
+            ul{
+                margin: 0;
+                width:20%;
+            }
+            li{
+                display: list-item;
+                text-align: left;
+                padding-left: 0;
+            }
+
+        }
     }
 }
