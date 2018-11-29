@@ -19,8 +19,6 @@ a:hover{
     color: $r;
 }
 
-/*-----end-of-links-----*/
-/*---------------------*/
 /*-----index-page-----*/
 
 /*slider-index*/
@@ -54,6 +52,7 @@ a:hover{
             background: url("../images/photos/7.jpg")
         }
     }
+
 /*menu-bar-index*/
 
 .naavbar{
@@ -63,16 +62,14 @@ a:hover{
         width: 70px;
         float: left;
     }
-
     #telephone-desk{
         text-align: center;
         color: $w;
         display: block;
-
     }
     #tel-mobile{
         display: none;
-}
+    }
     ul{
         margin-left: 18%;
         list-style: none;
@@ -87,19 +84,19 @@ a:hover{
     }
 }
 
-
 /*about-us-index*/
 
 .background{
     img{
         width: 100%;
+        height: 650px;
     }
     .about{
         position: absolute;
         top: 424px;
         section{
             color: $w;
-            width: 40%;
+            width: 50%;
             margin-left: 30%;
             background-color: $b;
             opacity: 0.8;
@@ -115,10 +112,7 @@ a:hover{
         }
     }
 }
-/*end-about-us-index*/
 
-/*-----end-index-body-----*/
-/*---------------------*/
 /*-----all-Nav-----*/
 .navbar{
     background-color: black;
@@ -138,9 +132,9 @@ a:hover{
         margin-right: 5%;
     }
 }
-/*-----end-all-navs-----*/
-/*---------------------*/
+
 /*-----menu-page-----*/
+
 /*top-page-menu*/
 .top-vid{
     background-color: $b;
@@ -161,7 +155,7 @@ a:hover{
         margin-left: 10%;
    }
 }
-/*end-top-page-menu*/
+
 /*menu-menu*/
 
 .table{
@@ -200,33 +194,73 @@ a:hover{
         font-size: 20px;
     }
 }
-/*-----end-menu-page*/
-/*-------------------*/
+
 /*-----reviews-page-----*/
+
 .color{
-    background-color: #FFFFE0;
+background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9);
 }
+
 /*commentslide*/
 #comments-container{
     background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9);
-    .comments-holder{
-        margin-top: 19%;
-        .comments{
-            width: 30%;
-            height: 50%;
-            display: block;
-            margin: 2%;
-
-            .tab1{
-                font-family: fantasy;
-                color: $r;
-                text-indent: 10%;
-                text-align: left;
-            }
+    overflow: hidden;
+    width: 25%;
+    height: 45%;
+    margin-left: 50%;
+    .comments {
+        display:block;
+        width: 3159px;
+        position: relative;
+        margin: 0;
+        color: $b;
+        font-family: fantasy;
+        animation: 55s slider infinite;
+        section{
+            float: left;
+            width: 10%;
+            height: 15%;
+        }
+        .tab1{
+            text-indent: 5%;
         }
     }
 }
-
+ @keyframes slider {
+  0% {
+      left: 0;
+  }
+  20% {
+      left: 0;
+  }
+  25% {
+      left: -100%;
+  }
+  30%{
+      left: -100%;
+  }
+  35%{
+      left: -200%;
+  }
+  45%{
+      left: -200%;
+  }
+  50%{
+      left: -300%;
+  }
+  70%{
+      left: -300%;
+  }
+  75%{
+      left: -400%;
+  }
+  85%{
+      left: -400%;
+  }
+  100%{
+      left: -400%;
+  }
+}
 
 
 /*form*/
@@ -239,7 +273,6 @@ a:hover{
     position: absolute;
     top: 167px;
     width: 35%;
-
     label{
         display: inline-block;
         width: 90px;
@@ -258,8 +291,6 @@ a:hover{
     }
 }
 
-/*-----end-reviews-page-----*/
-/*----------------------*/
 /*-----locations-page-----*/
 .colour{
     background-color: #FFFFE0;
@@ -271,7 +302,7 @@ a:hover{
             height: 500px;
         }
         .info{
-            width: 35%;
+            width: 40%;
             color: $r;
             .tab1{
                 text-indent: 5%;
@@ -298,7 +329,7 @@ a:hover{
         }
     }
     #ccontainer-img{
-        background-color: black;
+        background-color: $b;
         .sslider{
             width: 50%;
             height:370px;
@@ -342,7 +373,13 @@ a:hover{
             background: url("../images/photos/4.jpg")
         }
     }
+    #footer{
+        width: 100%;
+        position: absolute;
+        top:1035px;
+    }
 }
+
 /*----end*/
 /*------deliverypage------*/
 #personal-container{
@@ -375,8 +412,8 @@ a:hover{
 }
 .vvideo{
     position: absolute;
-    top: 27%;
-    left: 55%;
+    top: 30%;
+    left: 45%;
     video{
         width: 563px;
     }
@@ -392,7 +429,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px){
     /*index*/
     .img-slider{
         display: none;
@@ -428,14 +465,15 @@ footer{
         img{
                 display: block;
                 width: 100%;
-                height: 150px;
+                height: 100%;
             }
         }
     }
+
     /*about-us-index*/
     .background{
         img{
-            height: 750px;
+            height: 1000px;
         }
         .about{
             position: absolute;
@@ -455,7 +493,7 @@ footer{
             display: none;
         }
         #tel-mobile{
-            display: block;
+            display: contents;
             text-align: center;
             color: $w;
         }
@@ -469,6 +507,7 @@ footer{
             padding-left: 0;
         }
     }
+
     /*menu*/
     .top-vid{
         display: none;
@@ -480,13 +519,13 @@ footer{
         }
     }
     .table{
-        height: 1020px;
+        height: 680px;
         .img-menu{
             display: block;
             .top-rightmen{
                 width: 45%;
                 text-align: center;
-                margin-left: 40%;
+                margin-left: 47%;
                 .tab{
                     text-indent: 5%;
                     font-size: 100%;
@@ -506,14 +545,37 @@ footer{
             display: none;
         }
     }
+
     /*reviews*/
+    .color{
+        background-color: #FFFFE0;
+        #comments-container{
+        display: none;
+        }
+        .form-review{
+            margin-left: 0;
+            position: absolute;
+            top: 40%;
+            left: 0;
+            width: 90%;
+        }
+    }
+    .footer-reviews-m{
+        width: 100%;
+        position: absolute;
+        top: 520px;
+    }
 
     /*locations*/
     .colour{
+        height: 400px;
         .mapouter{
-            margin-left: 25%;
+            margin-left: 0;
             width: 100%;
             height: 150px;
+            position: absolute;
+            top:230px;
+            left: 0;
             #gmap_canvas{
                 width: 100%;
                 height: 205px;
@@ -526,33 +588,53 @@ footer{
             background-color: #FFFFE0;
             color: $b;
             width: 147px;
-            height: 320px;
+            height: 230px;
             border-radius: 0;
             font-size: 13px;
             text-align: center;
             position: absolute;
-            top: 206px;
-            left: 0;
+            top: 0;
+            left: 194px;
             .ok{
                 font-size: 20px;
             }
             .ownedby{
                 font-size: 12px;
             }
-        }
-    }
-    /*delivery*/
-    #personal-container{
-        padding-top: 36%;
-        padding-left: 8px;
-        top: 68px;
-        .vvideo{
-            position: absolute;
-            top: 17px;
-            left: 200px;
-            video{
-                width: 300px;
+            #tel-location{
+                color: $b;
             }
         }
+        #ccontainer-img{
+            .sslider{
+                display: none;
+            }
+        }
+        #footer{
+            width: 100%;
+            position: absolute;
+            top: 500px;
+        }
+    }
+
+    /*delivery*/
+    #personal-container{
+        width: 100%;
+        padding-top: 220%;
+        .delivery-menu{
+            position: absolute;
+            top:210px;
+        }
+    }
+    .vvideo{
+        display: none;
+        video{
+            display: none;
+        }
+    }
+    .footer-delivery{
+        width: 100%;
+        position: absolute;
+        top: 800px;
     }
 }

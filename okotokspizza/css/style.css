@@ -11,8 +11,6 @@ a:hover {
   cursor: crosshair;
   color: red; }
 
-/*-----end-of-links-----*/
-/*---------------------*/
 /*-----index-page-----*/
 /*slider-index*/
 .background {
@@ -63,14 +61,15 @@ a:hover {
 
 /*about-us-index*/
 .background img {
-  width: 100%; }
+  width: 100%;
+  height: 650px; }
 
 .background .about {
   position: absolute;
   top: 424px; }
   .background .about section {
     color: #FFFFFF;
-    width: 40%;
+    width: 50%;
     margin-left: 30%;
     background-color: black;
     opacity: 0.8; }
@@ -82,9 +81,6 @@ a:hover {
   .background .about .tab {
     text-indent: 10%; }
 
-/*end-about-us-index*/
-/*-----end-index-body-----*/
-/*---------------------*/
 /*-----all-Nav-----*/
 .navbar {
   background-color: black;
@@ -100,8 +96,6 @@ a:hover {
     display: inline-block;
     margin-right: 5%; }
 
-/*-----end-all-navs-----*/
-/*---------------------*/
 /*-----menu-page-----*/
 /*top-page-menu*/
 .top-vid {
@@ -120,7 +114,6 @@ a:hover {
     height: 220px;
     margin-left: 10%; }
 
-/*end-top-page-menu*/
 /*menu-menu*/
 .table {
   font-size: 12px;
@@ -151,27 +144,55 @@ a:hover {
   .table .td {
     font-size: 20px; }
 
-/*-----end-menu-page*/
-/*-------------------*/
 /*-----reviews-page-----*/
 .color {
-  background-color: #FFFFE0; }
+  background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9); }
 
 /*commentslide*/
 #comments-container {
-  background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9); }
-  #comments-container .comments-holder {
-    margin-top: 19%; }
-    #comments-container .comments-holder .comments {
-      width: 30%;
-      height: 50%;
-      display: block;
-      margin: 2%; }
-      #comments-container .comments-holder .comments .tab1 {
-        font-family: fantasy;
-        color: red;
-        text-indent: 10%;
-        text-align: left; }
+  background-image: repeating-linear-gradient(#FFFFE0, #FFFACD, #FFE4B5, #FFDAB9);
+  overflow: hidden;
+  width: 25%;
+  height: 45%;
+  margin-left: 50%; }
+  #comments-container .comments {
+    display: block;
+    width: 3159px;
+    position: relative;
+    margin: 0;
+    color: black;
+    font-family: fantasy;
+    animation: 55s slider infinite; }
+    #comments-container .comments section {
+      float: left;
+      width: 10%;
+      height: 15%; }
+    #comments-container .comments .tab1 {
+      text-indent: 5%; }
+
+@keyframes slider {
+  0% {
+    left: 0; }
+  20% {
+    left: 0; }
+  25% {
+    left: -100%; }
+  30% {
+    left: -100%; }
+  35% {
+    left: -200%; }
+  45% {
+    left: -200%; }
+  50% {
+    left: -300%; }
+  70% {
+    left: -300%; }
+  75% {
+    left: -400%; }
+  85% {
+    left: -400%; }
+  100% {
+    left: -400%; } }
 
 /*form*/
 .form-review {
@@ -197,8 +218,6 @@ a:hover {
     border-radius: 35px;
     background-color: black; }
 
-/*-----end-reviews-page-----*/
-/*----------------------*/
 /*-----locations-page-----*/
 .colour {
   background-color: #FFFFE0; }
@@ -209,7 +228,7 @@ a:hover {
       width: 560px;
       height: 500px; }
     .colour .mapouter .info {
-      width: 35%;
+      width: 40%;
       color: red; }
       .colour .mapouter .info .tab1 {
         text-indent: 5%; }
@@ -261,6 +280,10 @@ a:hover {
     background: url("../images/photos/3.jpg"); }
   100% {
     background: url("../images/photos/4.jpg"); } }
+  .colour #footer {
+    width: 100%;
+    position: absolute;
+    top: 1035px; }
 
 /*----end*/
 /*------deliverypage------*/
@@ -290,8 +313,8 @@ a:hover {
 
 .vvideo {
   position: absolute;
-  top: 27%;
-  left: 55%; }
+  top: 30%;
+  left: 45%; }
   .vvideo video {
     width: 563px; }
 
@@ -333,10 +356,10 @@ footer {
       .naavbar .mobile-img img {
         display: block;
         width: 100%;
-        height: 150px; }
+        height: 100%; }
   /*about-us-index*/
   .background img {
-    height: 750px; }
+    height: 1000px; }
   .background .about {
     position: absolute;
     top: 147px; }
@@ -351,7 +374,7 @@ footer {
     header #telephone-desk {
       display: none; }
     header #tel-mobile {
-      display: block;
+      display: contents;
       text-align: center;
       color: #FFFFFF; }
     header ul {
@@ -369,13 +392,13 @@ footer {
     .top-vid video {
       display: none; }
   .table {
-    height: 1020px; }
+    height: 680px; }
     .table .img-menu {
       display: block; }
       .table .img-menu .top-rightmen {
         width: 45%;
         text-align: center;
-        margin-left: 40%; }
+        margin-left: 47%; }
         .table .img-menu .top-rightmen .tab {
           text-indent: 5%;
           font-size: 100%;
@@ -389,39 +412,70 @@ footer {
     .table table {
       display: none; }
   /*reviews*/
-  /*locations*/
-  .colour .mapouter {
-    margin-left: 25%;
-    width: 100%;
-    height: 150px; }
-    .colour .mapouter #gmap_canvas {
-      width: 100%;
-      height: 205px; }
-    .colour .mapouter .info {
+  .color {
+    background-color: #FFFFE0; }
+    .color #comments-container {
       display: none; }
-  .colour .information {
-    background-color: #FFFFE0;
-    color: black;
-    width: 147px;
-    height: 320px;
-    border-radius: 0;
-    font-size: 13px;
-    text-align: center;
+    .color .form-review {
+      margin-left: 0;
+      position: absolute;
+      top: 40%;
+      left: 0;
+      width: 90%; }
+  .footer-reviews-m {
+    width: 100%;
     position: absolute;
-    top: 206px;
-    left: 0; }
-    .colour .information .ok {
-      font-size: 20px; }
-    .colour .information .ownedby {
-      font-size: 12px; }
+    top: 520px; }
+  /*locations*/
+  .colour {
+    height: 400px; }
+    .colour .mapouter {
+      margin-left: 0;
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      top: 230px;
+      left: 0; }
+      .colour .mapouter #gmap_canvas {
+        width: 100%;
+        height: 205px; }
+      .colour .mapouter .info {
+        display: none; }
+    .colour .information {
+      background-color: #FFFFE0;
+      color: black;
+      width: 147px;
+      height: 230px;
+      border-radius: 0;
+      font-size: 13px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 194px; }
+      .colour .information .ok {
+        font-size: 20px; }
+      .colour .information .ownedby {
+        font-size: 12px; }
+      .colour .information #tel-location {
+        color: black; }
+    .colour #ccontainer-img .sslider {
+      display: none; }
+    .colour #footer {
+      width: 100%;
+      position: absolute;
+      top: 500px; }
   /*delivery*/
   #personal-container {
-    padding-top: 36%;
-    padding-left: 8px;
-    top: 68px; }
-    #personal-container .vvideo {
+    width: 100%;
+    padding-top: 220%; }
+    #personal-container .delivery-menu {
       position: absolute;
-      top: 17px;
-      left: 200px; }
-      #personal-container .vvideo video {
-        width: 300px; } }
+      top: 210px; }
+  .vvideo {
+    display: none; }
+    .vvideo video {
+      display: none; }
+  .footer-delivery {
+    width: 100%;
+    position: absolute;
+    top: 800px; } }
